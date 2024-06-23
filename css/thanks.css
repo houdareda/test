@@ -1,0 +1,147 @@
+
+@font-face {
+  font-family: "Thev";
+  src: local("Thev"), url("../images/Thev.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ge";
+  src: local("ge"), url("../images/ge.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: "ge_send";
+  src: local("ge_send"), url("../images/GE-Snd-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  font-family: "ge";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #3039a1;
+  background-image: url("../images/thanks.png");
+  color: whitesmoke;
+  background-size: cover;
+  background-position: center bottom;
+}
+.container {
+  width: 90vw;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 150px;
+}
+.container h1 {
+  font-size: 100px;
+  letter-spacing: 0.5px;
+  font-family: "Thev";
+  margin-bottom: 10px;
+  letter-spacing: 1;
+}
+.container img {
+  width: 85px;
+  margin-bottom: 20px;
+}
+.container h3 {
+  font-size: 8vw;
+  line-height: 1.6;
+  font-weight: normal;
+}
+.container h3:nth-of-type(2) {
+  margin-bottom: 15px;
+  font-size: 5vw;
+}
+#go-back {
+  color: #efe9e9;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #e51e25, #791215);
+}
+#go-back:visited {
+  color: #efe9e9;
+  text-decoration: none;
+  position: relative;
+}
+.re {
+  margin-bottom: 80px;
+}
+/* ============================ */
+@media (max-width: 800px) {
+  body {
+    background-size: auto;
+  }
+  .container h1 {
+    font-size: 80px;
+  }
+  .container h3 {
+    font-size: 4vw;
+  }
+  .container img {
+    width: 85px;
+  }
+}
+/* ============================================= */
+@media (max-width: 600px) {
+  .container {
+    margin-top: 15vh;
+  }
+  .container h1 {
+    font-size: 9vw;
+    margin-bottom: 50px;
+  }
+  .container h3 {
+    font-size: 7.6vw;
+  }
+  .container h3:nth-of-type(2) {
+    font-size: 4.5vw;
+    margin-bottom: 20px;
+  }
+  #go-back {
+    font-size: 22px;
+    padding: 10px 30px;
+  }
+}
+.re:hover {
+  transform: scale(1.05);
+  transition: 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (min-width: 500px) {
+  .container h1 {
+    letter-spacing: 1.5px;
+    font-size: 4vw;
+  }
+  .container h3 {
+    letter-spacing: 0.5px;
+  }
+}
+@media (min-width: 800px) {
+  .container img {
+    width: 140px;
+  }
+}
+@media (max-width: 370px) {
+  .container h3:nth-of-type(1) {
+    line-height: 1.2;
+  }
+  .container h3:nth-of-type(2) {
+    margin-top: 7px;
+  }
+}
